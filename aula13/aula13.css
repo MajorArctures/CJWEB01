@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    height: 700px;
+    margin: 0 auto;
+    border: 10px solid black;
+}
+
+.item{
+    width: 150px;
+    height: 150px;
+    background-color: whitesmoke;
+    padding: 1em;
+    font-weight: 700;
+    color: darkgray;
+    text-align: center;
+    border: 10px solid #E0218A;
+    border-radius: 10px;
+    
+
+}
+
+.item3{
+    flex-shrink: 0;
+}

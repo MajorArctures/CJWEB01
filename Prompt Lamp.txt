@@ -1,0 +1,28 @@
+how to use lamp
+https://ubuntu.com/server/docs/lamp-applications
+
+ssh iniciar
+beatrizsilva@10.125.50.64
+
+@ = em
+~ = usuário/pessoalls
+
+pwd = mostra onde você está
+$ = usuário comum
+# = adm
+
+ls = lista os conteudos no serv
+lls - lista os arquivos locais
+mkdir = make directory
+cd = change directory
+cd. - pasta sucessora
+cd.. - pasta antecessora
+touch - nome.html
+nano = acessa para criar o site
+
+sftp - secure file transfecd.mdr protocol
+
+put arquivo.extensão = colocar aquivo na pasta
+mput *.* - enviar todos arquivos com quaisquer extensões
+
+rm* - tira tudo da pasta

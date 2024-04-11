@@ -1,0 +1,29 @@
+.card {
+
+box-shadow: 0 4px 8px 0 #E0218A;
+transition: 0.3s;
+width: 200pt;
+}
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+padding: 2px 16px;
+text-align: center;
+}
+
+.minicv{
+
+    width: 240px;
+    padding: 10px;
+    border: 5px solid white;
+    margin: 50px;
+    margin-right: 60px;
+}
+
+.rodape{
+    margin: 50px;
+    background-color: #ff6347;
+    border: 1px solid #4CAF50;
+    text-align: left;
+}

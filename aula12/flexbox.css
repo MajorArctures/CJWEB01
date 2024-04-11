@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item{
+    border: 1px solid #E0218A;
+    padding: 10px;
+    margin: 5px;
+}
