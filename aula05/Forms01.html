@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form> 
+        <!--campos de formulários, acompanham uma "action" que dirá para onde (servidor) serão enviados os dados coletados,
+        no entanto, essa ação será vista apenas no próximo semestre-->
+    
+        Nome: <input type="text" name="name" id="nome"> <br>
+        Naturalidade: <input type="text" name="naturalidade" id="naturalidade">
+        <input type="checkbox" name="" id=""> <br>
+        <br>
+        Cadastrar: <input type="submit" value="Cadastrar">
+    </form>
+<hr>
+    <form> 
+        
+        <!-- Todos os campos "name" precisam ser iguais para que funcione a seleção de apenas uma opção, ele representa a ligação dos campos-->
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Masculino</label><br>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Feminino</label><br>
+
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Outro</label>
+    </form>
+    <hr>
+    <form> 
+        <!--Mesmo que todos os campos "name"sejam iguais, permite a seleção de várias opções, liga os campos, porém permite mais de uma opção de seleção para o usuário-->
+        <input type="checkbox" id="apple" name="fruits" value="apple">
+        <label for="apple"> Maçã </label><br>
+        <!--type = tipo de campo de formulário, id = identificação do campo, name= grupo pertencente, value= valor do campo-->
+        <!--label=rótulo (o que irá aparecer para o usuário na tela)-->
+
+        <input type="checkbox" id="banana" name="fruits" value="banana">
+        <label for="banana">Banana</label><br>
+
+        <input type="checkbox" id="orange" name="fruits" value="orange">
+        <label for="orange">Laranja</label>
+    </form>
+    <hr>
+    <form>
+        <!--Criar uma lista suspensa com seleção de opção única-->
+        <label for="fruits">Escolha uma fruta:</label>
+        <select id="fruits" name="fruits">
+            <option value="apple">Maçã</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Laranja</option>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

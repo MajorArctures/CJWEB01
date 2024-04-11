@@ -1,0 +1,77 @@
+.dotred{
+    width: 50pt;
+    height: 70pt;
+    border: 10px dotted red;
+    font: bold;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+   
+}
+     
+.dashedgreen{
+    width: 50pt;
+    height: 70pt;
+    border: 10px dashed green;
+    font: bold;
+    text-align: center;
+    display: inline-block;
+ 
+}
+
+.soliddblue{
+    width: 50pt;
+    height: 70pt;
+    border: 10px solid darkblue;
+    font: bold;
+    text-align: center;
+    display: inline-block;  
+}
+        
+.dgray{
+    width: 50pt;
+    height: 70pt;
+    border: 10px double gray;
+    font: bold;
+    text-align: center;
+    display: inline-block;
+  
+}
+        
+.grofire{
+    width: 50pt;
+    height: 70pt;
+    border: 10px groove firebrick;
+    text-align: center;
+    display: inline-block;
+    vertical-align: bottom;
+   
+}
+        
+.riforange{
+    width: 50pt;
+    height: 70pt;
+    border: 10px ridge orange;
+    text-align: center;
+    display: inline-block;
+    vertical-align: bottom;
+
+
+}
+        
+.insetf{
+    width: 60pt;
+    height: 70pt;
+    border: 10px inset forestgreen;
+    text-align: center;
+    display: inline-block;
+  
+}
+        
+.deppskyb{
+    width: 60pt;
+    height: 70pt;;
+    border: 10px outset deepskyblue;
+    text-align: center;
+    display: inline-block;
+}

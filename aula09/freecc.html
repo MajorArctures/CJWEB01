@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link href="freecodemod1.css">
+</head>
+<body>
+    <h1 id="title">ILLUMINARE - Escola de Programação e Robótica</h1>
+    <h2>Formulário de Inscrição</h2>
+    <p id="description">Preencha todos os campos abaixo para realizar sua inscrição para o concurso de bolsas da Escola de Programação e Robótica.
+        Lembre-se de escolher os cursos de seu interesse e conferir os dados. Quaisquer dúvidas devem ser encaminhadas ao nosso e-mail de 
+        contato:<link href="contatoescola@programrob.com.br">contatoescola@programrob.com.br</link>
+    </p>
+    <form id="survey-form">
+        <h3>Dados Pessoais:</h3>
+        <label for="name">Nome:</label>
+        <input type="text" id="name-label" value="name" placeholder="Insira seu nome..." required><br>
+        <label for="email" id="email-label"> E-mail:</label>
+        <input type="email" id="email" value="email" placeholder="Insira seu e-mail..." required><br>
+        <label for="number-label">Fone:</label>
+        <input type="number" id="number-label" placeholder="(XX) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" value="fone"><br>
+        <label for="lvlconhecimento">Identifique seu conhecimento em robótica e Programação numa escala de 1 a 5, 
+            onde, 1 significa "Sou iniciante" e 5 "Quero me aprimorar":</label>
+        <input type="number" id="lvlconhecimento" min="1" max="5" value="lvlconhecimento" placeholder="1"required>
+
+
+        <p>Selecione a sua idade:</p>
+            <input type="radio" id="ate16" name="age" value="ate16">
+            <label for="ate16">Até 16</label><br>
+            <input type="radio" id="1624" name="age" value="16-25">
+            <label for="1624">16-24</label><br>
+            <input type="radio" id="2535" name="age" value="25-35">
+            <label for="2535">25-35</label><br>
+            <input type="radio" id="36" name="age" value="36+">
+            <label for="36">36+</label>
+    </form>
+    <form> 
+        <section>
+            <h3>Interesses:</h3>
+            <p>Selecione a modalidade de ensino pretendida:</p>
+            <input type="radio" id="Presencial" name="modalidade" value="Presencial">
+            <label for="Presencial">Presencial</label>
+            <input type="radio" id="Online" name="modalidade" value="Online">
+            <label for="Online">Online</label>
+            <input type="radio" id="Hibrido" name="modalidade" value="Hibrido">
+            <label for="Hibrido">Híbrido</label>
+        </section>
+        <section>
+            <p>Selecione o(s) curso(s) pretendido(s):</p>
+            <input type="checkbox" id="kidrob" name="cursos" value="kidrob">
+            <label for="kidrob">KidRobot</label>
+            <input type="checkbox" id="kidgame" name="cursos" value="kidgame">
+            <label for="kidgame">KidGames</label>
+            <input type="checkbox" id="kidcode" name="cursos" value="kidcode">
+            <label for="kidcode">KidCoding</label>
+            <input type="checkbox" id="TeenClub" name="cursos" value="TeenClub">
+            <label for="TeenClub">TeenClub</label>
+            <input type="checkbox" id="TeenGames" name="cursos" value="TeenGames">
+            <label for="TeenGames">TeenGames</label>
+            <input type="checkbox" id="SuperCode" name="cursos" value="SuperCode">
+            <label for="SuperCode">SuperCoding</label>
+            <input type="checkbox" id="SuperGames" name="cursos" value="SuperGames">
+            <label for="SuperGames">SuperGames</label>
+        </section>  
+        <section>
+            <h3>Informações adicionais:</h3>
+            <label for="dropdown">Como você nos conheceu?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="selecione">Selecione</option>
+                <option value="Amigos/Família">Amigos/Família</option>
+                <option value="Google">Google</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Anúncio em Games">Anúncio em Games</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </section>
+        <section>
+            <label for="textarea"> Por favor, adicione aqui comentários ou Informações adicionais:</label>
+            <input type="textarea" id="textarea">
+        </section>
+            <section>
+            <label for="submit">Inscreva-se</label>
+            <input type="submit" id="submit" placeholder="Digite seus comentários e informações adicionais...">
+        </section>
+    </form>
+</body>
+<footer>
+
+</footer>
+</html>

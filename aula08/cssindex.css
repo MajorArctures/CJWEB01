@@ -1,0 +1,16 @@
+
+p {
+    color: #E0218A;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: italic;
+}
+
+h1 {color: #333;}
+
+.destaque{
+    /* comentários */
+    background-color: yellow;
+    border: 1px  solid orange;
+    padding: 10px;
+}

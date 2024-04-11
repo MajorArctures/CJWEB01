@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com formulário</title>
+</head>
+<body>
+    <Table>
+        <tr>
+        <tr>
+            <th colspan="7">Dados Pessoais</th>
+        </tr>
+        <tr>
+            <td>Nome do Aluno:</td>
+            <td colspan="6"> <input type="text" name="Dados Pessoais" id="nome do aluno"></td>
+        </tr>
+        <tr>
+            <td> Nascimento (dd/mm/aa):</td>
+            <td> <input type="text" name="Dados Pessoais" id="dia" size="3"></td>
+            <td> / </td>
+            <td> <input type="text" name="Dados Pessoais" id="mes" size="3"></td>
+            <td> / </td>
+            <td> <td> <input type="text" name="Dados Pessoais" id="ano" size="3"></td>
+        </tr>
+        <tr>
+            <td> Nome da Mãe:</td>
+            <td colspan="6"> <input type="text" name="Dados Pessoais" id="Nome da Mãe"> </td>
+        </tr>
+        <tr>
+            <td> Nome do Pai: </td>
+            <td colspan="6"> <input type="text" name="Dados Pessoais" Id="Nome do Pai"> </td>
+        </tr>
+        <tr>
+            <td>Telefone:</td>
+            <td>DDD:</td>
+            <td>(<input type="text" name="Dados Pessoais" id="DDD" size="3"> )</td>
+            <td>Tel:</td>
+            <td> <input type="text" name="Dados Pessoais" id="Telefone" size="10"></td>
+            <td>Ramal:</td>
+            <td> <input type="text" name="Dados Pessoais" id="ramal" size="5"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td> <input type="email" name="Dados Pessoais" id="Email"></td>
+        </tr>
+        </tr>
+        <tr>
+            <tr>
+                <th colspan="7"> Informações de Matrícula </th>
+            </tr>
+            <tr>
+                <td colspan="2">Série:</td>
+                <td colspan="2">Turno:</td>
+                <td colspan="3">Atividades Extracurriculares</td>
+            </tr>
+            <tr>
+                <td colspan="2"> 
+                    <select id="Série"> Selecione 
+                        <option value="preescolar">pré-escolar</option>
+                        <option value="efI">Fundamental I</option>
+                        <option value="efII">Fundamental II</option>
+                    </select>
+                 </td>
+               
+                    <td colspan="2"> 
+                    <input type="radio" name="Turno" id="manha"> 
+                    <label for="manha"> Manhã</label> <br>
+
+                    <input type="radio" name="Turno" id="tarde">
+                    <label for="tarde">Tarde</label>
+                </td>
+                <td colspan="3">
+                    <input type="checkbox" name="atex" id="info">
+                    <label for="info">Informática</label> <br>
+
+                    <input type="checkbox" name="atex" id="music">
+                    <label for="music">Música</label> <br>
+
+                    <input type="checkbox" name="atex" id="ballet">
+                    <label for="ballet">Ballet</label> <br>
+
+                    <input type="checkbox" name="atex" id="pint">
+                    <label for="pint">Pintura</label> <br>
+
+                    <input type="checkbox" name="atex" id="judo">
+                    <label for="judo">Judô</label> <br>
+
+                    <input type="checkbox" name="atex" id="fut">
+                    <label for="fut">Futebol</label> <br>
+                </td>
+            </tr>
+        </tr>
+    </Table>
+</body>
+</html>

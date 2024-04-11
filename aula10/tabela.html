@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabela.css">
+    <title>Tabela</title>
+</head>
+<body>
+    <h1>Tabela 1</h1>
+    <table border="1" class="tab1">
+        <tr >
+            <th>No</th>
+            <th>Nome Completo</th>
+            <th>Cargo</th>
+            <th>Salário</th>
+            <th>Tipo</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Satya Nadella</td>
+            <td>CEO Microsoft</td>
+            <td>$10000</td>
+            <td>Membro</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jeff Bezos</td>
+            <td>Fundador Amazon</td>
+            <td>$12000</td>
+            <td rowspan="3">Fundador</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Fundador Google</td>
+            <td>$11000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Zuckeberg</td>
+            <td>Fundador Facebook</td>
+            <td>$13000</td>
+        </tr>
+        <tr>
+            <td colspan="3"  text-align="left">Total:</td>
+            <td>$46000</td>
+        </tr>
+    </table>
+    <h1>Tabela 2</h1>
+    <table border="1" class="tab2">
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Média</th>
+            <th rowspan="2">Porcentagem</th>
+        </tr>
+        <tr>
+            <td>Altura</td>
+            <td>Peso</td>
+
+        </tr>
+        <tr>
+            <td>Homens</td>
+            <td>1,71</td>
+            <td>80</td>
+            <td>57%</td>
+        </tr>
+        <tr>
+            <td>Mulheres</td>
+            <td>1,60</td>
+            <td>60</td>
+            <td>43%</td>
+        </tr>
+    </table>
+    <h1>Tabela 3</h1>
+    <table border="1" class="tabper">
+        <tr>
+            <th class="nromano">I</th>
+            <th class="nromano">II</th>
+            <th class="nromano">III</th>
+            <th class="nromano">IV</th>
+            <th class="nromano">V</th>
+            <th class="nromano">VI</th>
+            <th class="nromano">VII</th>
+        </tr>
+        <tr>
+            <td class="hidrogenio">H</td>
+            <td></td>
+            <td rowspan="3" colspan="3"> Tabela Periódica</td>
+            <td></td>
+            <td class="ultimacol">He</td>     
+        </tr>
+        <tr>
+            <td>Li</td>
+            <td>Be</td>
+            <td>B</td>
+            <td class="ultimacol">Ne</td>
+        </tr>
+        <tr>
+            <td>Na</td>
+            <td>Mg</td>
+            <td>Al</td>
+            <td class="ultimacol">Ar</td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td>Ca</td>
+            <td>Sc</td>
+            <td>Ti</td>
+            <td>V</td>
+            <td>Ga</td>
+            <td class="ultimacol">Kr</td>
+        </tr>
+    </table>
+</body>
+</html>

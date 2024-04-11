@@ -1,0 +1,73 @@
+section{
+    border-top: 20px dotted olive;
+    border-right: 20px dashed crimson;
+    border-bottom:20px solid aqua;
+    border-left:20px double darkorange;
+    padding: 2%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20%;
+    margin-bottom: 35%;
+    text-align: center;
+}
+
+.dotred{
+    border-top: 10px dotted red;
+    border-right: 10px dotted red;
+    border-bottom:10px dotted red;
+    border-left:10px dotted red;
+    font: bold;
+}
+     
+.dashedgreen{
+    border-top: 10px dashed green;
+    border-right: 10px dashed green;
+    border-bottom:10px dashed green;
+    border-left:10px dashed green;
+    font: bold;
+    }
+
+.soliddblue{
+    border-top: 10px solid darkblue;
+    border-right: 10px solid darkblue;
+    border-bottom:10px solid darkblue;
+    border-left:10px solid darkblue;
+    font: bold;
+}
+        
+.dgray{
+    border-top: 10px double gray;
+    border-right: 10px double gray;
+    border-bottom:10px double gray;
+    border-left:10px double gray;
+    font: bold;
+}
+        
+.grofire{
+    border-top: 10px groove firebrick;
+    border-right: 10px groove firebrick;
+    border-bottom:10px groove firebrick;
+    border-left:10px groove firebrick;
+}
+        
+.riforange{
+    border-top: 10px ridge orange;
+    border-right: 10px ridge orange;
+    border-bottom: 10px ridge orange;
+    border-left: 10px ridge orange;
+}
+        
+.insetf{
+    border-top: 10px inset forestgreen;
+    border-right: 10px inset forestgreen;
+    border-bottom:10px inset forestgreen;
+    border-left:10px inset forestgreen;
+}
+        
+.deppskyb{
+    border-top: 10px outset deepskyblue;
+    border-right: 10px outset deepskyblue;
+    border-bottom:10px outset deepskyblue;
+    border-left:10px outset deepskyblue;
+}
+        

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2+p{
+            font-variant: small-caps;
+            background-color: aquamarine;
+        }
+        article>h1{
+            color: blue;
+        }
+        p.especial{
+            color: yellowgreen;
+        }
+        p:not(.especial) {
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Título</h1>
+        <p>Início</p>
+        <h2>Subtitulo</h2>
+        <p>Texto</p>
+        <p>Mais texto</p>
+    </article>
+    <article>
+        <h1>Título Principal</h1>
+            <p class="especial">
+                Eu sou uma entusiasta... Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                Reprehenderit hic nam mollitia illum ratione laboriosam, modi temporibus vel, <br>
+                accusantium totam cumque enim excepturi ea nulla nihil officia quos itaque animi!
+            </p>
+        <section>
+            <h1>Título Secundário</h1>
+                <p>
+                    <!--PADDING=espaço entre o conteúdo e a borda-->
+                    Eu sou uma entusiasta... Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                    Reprehenderit hic nam mollitia illum ratione laboriosam, modi temporibus vel, <br>
+                    accusantium totam cumque enim excepturi ea nulla nihil officia quos itaque animi!
+                </p>
+        </section>
+    </article>
+</body>
+</html>
