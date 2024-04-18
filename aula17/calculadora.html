@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="display" class="display" disable>
+        <br>
+        <button class="botaonum" onclick="adicionaNumero(7)">7</button>
+        <button class="botaonum" onclick="adicionaNumero(8)">8</button>
+        <button class="botaonum" onclick="adicionaNumero(9)">9</button>
+        <button class="botaooperacao" onclick="definirOperacao('/')">/</button>
+        <br>
+        <button class="botaonum" onclick="adicionaNumero(4)">4</button>
+        <button class="botaonum" onclick="adicionaNumero(5)">5</button>
+        <button class="botaonum" onclick="adicionaNumero(6)">6</button>
+        <button class="botaooperacao" onclick="definirOperacao('*')">*</button>
+        <br>
+        <button class="botaonum" onclick="adicionaNumero(1)">1</button>
+        <button class="botaonum" onclick="adicionaNumero(2)">2</button>
+        <button class="botaonum" onclick="adicionaNumero(3)">3</button>
+        <button class="botaooperacao" onclick="definirOperacao('-')">-</button>
+        <br>
+        <button class="botaonum" onclick="adicionaNumero(0)">0</button>
+        <button class="botaoC"onclick="limparDisplay()">C</button>
+        <button class="botaoigual"onclick="calculaResultado('=')">=</button>
+        <button class="botaooperacao"onclick="definirOperacao('+')">+</button>
+    </div>
+</body>
+</html>

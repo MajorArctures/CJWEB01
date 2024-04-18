@@ -1,0 +1,23 @@
+
+.display{
+    size: 50px 30px;
+    font-size: 12px bold black;
+    background-color: lightgrey;
+}
+
+.botaonum{
+    display: flex;
+    
+    border-radius: 3px 3px 3px 3px;
+    background-color: lightblue;
+}
+
+.botaooperacao{
+    border-radius: 3px 3px 3px 3px;
+    background-color: lightyellow;
+}
+
+.botaoC, .botaoigual{
+    border-radius: 3px 3px 3px 3px;
+        background-color: orange;
+}
