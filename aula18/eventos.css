@@ -1,0 +1,40 @@
+.hover{
+    background-color: #e3218a;
+    font-size: 18px bold;
+    font-style: italic;
+    color: white;
+    padding: 10px; 
+    user-select: none;
+}
+h1{
+    font: 16px bold black;
+    text-align: center;
+}
+
+.lightMode,{
+    transition: background-color 0.5s, color 0.5s; /*serve para que a transição de um tema para outra seja suave, feita em 0.5 segundos*/
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.darkMode{
+    background-color: #333;
+    color:#f0f0f0;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px bold;
+    background-color: #e3218a;
+    border: none;
+    border-radius: 5px;
+    color:antiquewhite;
+    cursor: pointer;
+}

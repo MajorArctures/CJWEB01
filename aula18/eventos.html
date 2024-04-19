@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eventos.css">
+    <title>Eventos</title>
+</head>
+<body>
+    <h1>Exemplo 01:</h1>
+    <button id="botao">Clique aqui!</button>
+    <div id="conteudo">
+
+    </div>
+    <h1>Exemplo 02:</h1>
+    <div class="hover" id="hover">
+        Passe o Mouse aqui!
+    </div>
+    <br>
+    <!--Eventos enquanto o usuário digita, eventos de validação-->
+    <form >
+        <label for="nome">Nome:  </label>
+        <input type="text" name="Nome" id="nome" required><br>
+
+        <label for="email">E-mail: </label>
+        <input type="email" name="Email" id="email"required> <br>
+
+        <input type="button" value="Enviar"> 
+    </form>
+    <p id="valorDoCampo"></p>
+
+    <!--Evento para mudar o tema da tela-->
+        <div class="lightMode">
+                <h1>Modo Dark/Light</h1>
+                <p>Este é um exemplo de como alternar entre modos escuro e claro!</p>
+                <input type="button" id="alternarModo" value="DarkMode">
+                <label for="button"></label>
+        </div>
+
+    <script rel="javascript" src="eventos.js"></script>
+</body>
+</html>
