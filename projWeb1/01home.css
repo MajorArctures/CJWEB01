@@ -1,0 +1,394 @@
+.main{
+  display: flex;
+  max-width: auto;
+  margin: 0;
+  display: block;
+  justify-content: center;
+}
+/*Designs que afetam a página toda*/
+.containerBody{
+  max-width: auto;
+  margin: 0;
+  display: block;
+  justify-content: center;
+  background-color:  #000000;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+  background-image: linear-gradient(to right, #000000, #271b1d, #492e33, #6d4348, #94595d, #94595d, 
+  #94595d, #94595d, #6d4348, #492e33, #271b1d, #000000);
+  height: 45px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 27px;
+  color: white;
+}
+
+@media only screen and (min-width: 800px){
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    background-image: linear-gradient(to right, #000000, #271b1d, #492e33, #6d4348, #94595d, #94595d, 
+    #94595d, #94595d, #6d4348, #492e33, #271b1d, #000000);
+    height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    color: white;
+  }
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px;
+  background-color: #ca7878;
+  color: #000000;
+}
+
+.nav-links a {
+  color: #ffffff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 3em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #333;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 17px;
+  list-style-type: none; /* Remove as bolinhas criadas automaticamente pela tag de lista */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: bold #000000;
+}
+
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* RESPONSIVO*/
+@media (max-width: 768px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color:#333;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 11px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color:#e0218a;
+    transition: 0.3s ease;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+}
+/*MENU_FIM*/
+/*CARROSSEL DE JOGOS*/
+ article .carrossel {
+  box-sizing:content-box;
+  padding: 0;
+  background: #000000;
+  /*background: linear-gradient(180deg, rgba(241,195,188,1) 0%, rgba(241,166,164,1) 50%, rgba(0,0,0,1) 100%);*/
+}
+.imgCarousel {
+  display: none;
+}
+
+.jogosImg{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content:center;
+  width: 100%;
+  background-color: #333;
+  border: #E0218A 1px;
+}
+
+/*Box do Carrossel*/
+.carrossel{
+  margin-top: 10px;
+}
+.carouselContainer {
+  max-width: 800px; /*Definição de largura máxima p fotos*/
+  margin: auto; /*Centralização horizontal*/
+  position: relative; /*Posição de relativo --- interliga com a posiçao dos botões de retorno e avanço*/
+  }
+  
+/*Botões próximo/anteior*/
+.prev, .next {
+  cursor: pointer;/*Muda cursor p ponteiro quando passar o mouse*/
+  width: auto;
+  padding: 16px; 
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease; /*usado p criar uma transição suave*/
+  border-radius: 1px 5px 5px 1px; /*deixa a borda do botão redondinha*/
+  user-select: none; /*não deixa o usuário selecionar o texto do botão*/
+  position: absolute; /*posições do botões vinculados a posição do container --- explicação w3schools*/
+  top: 50%; /*alinhamento centralizado verticamentl*/
+  transform: translateY(-50%); /*ajusta o alinhamento acima*/
+}
+  
+.prev {
+  left: 0; /*botão anterior a esquerda*/
+}
+  
+.next {
+  right: 0; /*botão próximo a direita*/
+}
+  
+/*Ao passar o mouse, adicione uma cor de fundo preta com um pouco de transparência*/
+  .prev:hover, .next:hover { 
+    background-color: #f5a59f;
+}
+  
+/* Pontinhos*/
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #f5a59f;
+  border-radius: 50%;
+  display: inline-block;  
+  transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #333;
+}
+  
+/*Transição suave entre as imagens*/
+.fade {
+    animation-name: fade;  
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+/* Diminuir o texto quando diminuir a tela */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*CARROSSEL DE JOGOS_FIM*/
+/*DESTAQUES*/
+.destaques{
+  /*background: linear-gradient(180deg, #000000, #f0888e);*/
+  color:#000000;
+}
+.newsContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffc1bd;   
+  font-size: small;  
+ }
+ 
+ .newsImg {
+   max-width: 275px;
+   align-items: center;
+ }
+ 
+ .newsText{
+   padding-left: 5px;
+   flex-direction: column;
+   font-size: 14px;
+ }
+/*RESPONSIVO*/
+@media only screen and (min-width: 800px){
+  .newsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    max-width: 900px;
+    margin-top: 10px;
+    background-color: #ffd4e7;     
+    }
+    .newsImg {
+      max-width: 350;
+    }
+    .newsText{
+      padding-left: 10px;
+      flex-direction: column;
+      font-size: 16px;
+    }
+}
+/*DESTAQUES_FIM*/
+/*CARDS DESENVOLVEDORAS*/
+.containerDevs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  }
+  .containerDevs img{
+    margin: 5px;
+    transition: all 1s;
+    max-width: 275px;
+    max-height: auto;
+  }
+  .containerDevs img:hover{
+      transform: scale(1.1)
+  }
+/*CARDS DESENVOLVEDORAS_FIM*/
+/* TGA*/
+.tgaContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 1000px;
+  margin: auto;
+  background: #ffc1bd;
+  /*background: linear-gradient(180deg, rgba(241,195,188,1) 0%, rgba(241,166,164,1) 50%, rgba(0,0,0,1) 100%);*/
+  font-size: small;  
+}
+ 
+.tgaImg {
+  max-width: 100%;
+  align-items: center;
+}
+ 
+.tgaNews{
+  padding-left: 5px;
+  flex-direction: column;
+  font-size: 14px black bold;
+}
+/*RESPONSIVO*/
+@media only screen and (min-width: 500px){
+  .tgaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    max-width: 100%;
+    height: 250px;
+    margin: auto;
+    background: #000000;
+    /*background: linear-gradient(180deg, rgba(241,195,188,1) 0%, rgba(241,166,164,1) 50%, rgba(0,0,0,1) 100%);*/
+    color: white;
+  }
+    .tgaImg {
+      max-width: 900;     
+  }
+    .tgaNews{
+      padding-left: 10px;
+      flex-direction: column;
+      font-size: 16px;
+      color: white;
+  }
+}
+/*TGA_FIM*/ 
+/*RODAPÉ AQUI*/
+.navrodape {
+  display: flex;
+  background-color: #ca7878;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: bold #ffffff;
+  justify-content: flex-end;
+  margin: auto;  
+}
+
+.rodape {
+  display: flex;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.rodape li:hover {
+  background-color: #e0218a;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.rodape li {
+  padding: 5px 21px;
+  list-style-type: none; /* Remove as bolinhas criadas automaticamente pela tag de lista */
+}
+
+.rodape li button{
+  max-width: 80px;
+  max-height: 40px;
+  display: inline-block;
+}
+
+.rodape a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 800px){
+  .navrodape {
+    padding: 11px;
+    background-color: #ca7878;
+    color: #fff;
+  }
+  
+  .rodape {
+    display: flex;
+    font-size: 18px;
+  }
+  
+  .rodape li:hover {
+    background-color: #e0218a;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .rodape li {
+    padding: 5px 17px;
+    list-style-type: none; /* Remove as bolinhas criadas automaticamente pela tag de lista */
+  }
+  
+  .rodape a {
+    color: #fff;
+  }
+}

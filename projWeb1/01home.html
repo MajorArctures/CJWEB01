@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="01home.css">
+  <title>HOME</title>
+</head>
+<body class="containerBody">
+  <header>
+    <nav class="navbar">
+      <div class="logo">logo</div>
+        <ul class="nav-links">
+          <!--CHECKBOX HACK link explicativo: https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">JOGOS</a></li>
+            <li><a href="/">DEV'S</a></li>
+            <li><a href="/">TGA</a></li>
+            <li><a href="/">DESTAQUES</a></li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <article >
+    <!--CARROSSEL DE JOGOS-- Função SlideShow-->
+    <section class="carrossel">
+      <div class="carouselContainer">
+        <div class="imgCarousel fade">
+          <img class="jogosImg" src="01img/gamesFotosHorizontais/Transistor.jpg" style="width:100%">
+        </div>
+        <div class="imgCarousel fade">
+          <img class="jogosImg" src="01img/gamesFotosHorizontais/DeathsDoor.avif" style="width:100%">
+        </div>
+        <div class="imgCarousel fade">
+          <img class="jogosImg" src="01img/gamesFotosHorizontais/Gris.avif" style="width:100%">
+        </div>
+        <div class="imgCarousel fade">
+          <img class="jogosImg" src="01img/gamesFotosHorizontais/LittleNightmares.jpg" style="width:100%">
+        </div>
+        <div class="imgCarousel fade">
+          <img class="jogosImg" src="01img/gamesFotosHorizontais/HollowKnight.avif" style="width:100%">
+        </div>
+        <div class="imgCarousel fade">
+          <img class="jogosImg" src="01img/gamesFotosHorizontais/The Shadow of Dust.avif" style="width:100%">
+        </div>
+        <div class="imgCarousel fade">
+          <img class="jogosImg" src="01img/gamesFotosHorizontais/CultOfTheLamb.avif" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+      </div>
+    </section>
+  </article>
+  <article class="destaques">
+    <h1 class="title">DESTAQUES</h1>
+    <!--Para facilitar a organização-->
+    <section class="newsContainer">
+      <img src="01img/gamesFotosHorizontais/newSilksong.webp" class="newsImg" alt="Imagem-Jogo-Silksong">
+      <div class="newsText">    
+          <h2>Silksong e as previsões de lançamento!</h2>
+          <p>Anunciado no começo de 2019, Hollow Knight Silksong é daqueles jogos cuja revelação 
+              aconteceu há tanto tempo e que a expectativa de muitos já se transformou em frustração. 
+              Imaginado originalmente como um DLC do Hollow Knight original, de 2017, o game ganhou em 
+              escopo e acabou virando uma aventura totalmente original de Hornet.
+          </p>
+          <a href="">Leia o conteúdo >>></a>
+      </div>
+    </section>
+    <br>
+    <section class="newsContainer">
+      <img src="01img/gamesFotosHorizontais/newSilksong.webp" class="newsImg" alt="Imagem-Jogo-Silksong">
+      <div class="newsText">    
+        <h2>Silksong e as previsões de lançamento!</h2>
+        <p>Anunciado no começo de 2019, Hollow Knight Silksong é daqueles jogos cuja revelação 
+            aconteceu há tanto tempo e que a expectativa de muitos já se transformou em frustração. 
+            Imaginado originalmente como um DLC do Hollow Knight original, de 2017, o game ganhou em 
+            escopo e acabou virando uma aventura totalmente original de Hornet.
+        </p>
+        <a href="">Leia o conteúdo >>></a>
+      </div>
+    </section>
+    <br>
+    <section class="newsContainer">
+      <img src="01img/gamesFotosHorizontais/newSilksong.webp" class="newsImg" alt="Imagem-Jogo-Silksong">
+      <div class="newsText">    
+        <h2>Silksong e as previsões de lançamento!</h2>
+        <p>Anunciado no começo de 2019, Hollow Knight Silksong é daqueles jogos cuja revelação 
+            aconteceu há tanto tempo e que a expectativa de muitos já se transformou em frustração. 
+            Imaginado originalmente como um DLC do Hollow Knight original, de 2017, o game ganhou em 
+            escopo e acabou virando uma aventura totalmente original de Hornet.
+        </p>
+        <a href="">Leia o conteúdo >>></a>
+      </div>
+    </section>
+  </article>
+  <br>
+    <!--CARDS DE EMPRESAS-->
+  <h1 class="title">DESENVOLVEDORAS</h1> 
+  <div class="containerDevs">
+    <img src="01img/cardsDevs/devPlaydead.png" alt="">
+    <img src="01img/cardsDevs/devMadMimic.png" alt="">
+    <img src="01img/cardsDevs/devSupergiant.png" alt="">
+    <img src="01img/cardsDevs/devThatGameComp.png" alt="">
+    <img src="01img/cardsDevs/devTarsier.png" alt="">
+  </div>
+  <!--TGA BLOCO-->
+ <article>
+    <h1 class="title">THE GAME AWARDS</h1>
+    <div class="tgaContainer">
+      <img src="01img/gamesFotosHorizontais/tga.webp" class="tgaImg" alt="">
+      <section class="tgaNews">
+        <h2>DATA E HORA CONFIRMADA!</h2>
+        <p>
+        <!--escrever em pt!!!!!! não esquecer -->
+        The Game Awards 10th Anniversary broadcast will take place live on Thursday,<br>
+        December 12, 2024 from Peacock Theater in Los Angeles. <br>
+        Stay tuned for more details on ticket sales and plans for TGA 2024.<br>
+        </p>
+      </section>
+    </div>
+  </article>
+  <footer>
+    <nav class="navrodape">
+      <ul class="rodape">
+          <li><a href="/">Sobre</a></li>
+          <li><a href="/">Increva-se</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script rel="javascript" src="01home.js"></script>
+</body>
+</html>
+  
