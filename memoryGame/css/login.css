@@ -1,0 +1,58 @@
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.loginHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.loginHeader h1{
+    margin: 10px auto;
+    color: #333;
+}
+
+.nomeJogador{
+    border: 3px solid #333;
+    border-radius: 5px;
+    height: 40px;
+    max-width: 300px;
+    width: 100%;
+    font-size: small;
+    padding: 10px;
+}
+
+.botaoLogin:disabled{
+    margin: 10px;
+    padding: 7px 20px ;
+    border: 2px solid #b1e8f8;
+    border-radius: 5px;
+    background-color: #b1e8f8;
+    max-width: 300px;
+    width: 100%;
+    color: black bold;
+}
+
+.botaoLogin {
+    margin: 10px;
+    padding: 7px 20px ;
+    border: 2px solid #f78ca3;
+    border-radius: 5px;
+    background-color: #f78ca3;
+    max-width: 300px;
+    width: 100%;
+    color: white bold;
+}
+
+img{
+    border-radius: 10px;
+}
