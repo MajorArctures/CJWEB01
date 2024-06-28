@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <title>Memory Game</title>
+</head>
+<body>
+  <main>
+  <header>
+    <span class="player"></span>
+    <span>Tempo: <span class="timer">00</span></span>
+  </header>
+  <!--Painel - cards + rank, colocar em linha-->
+  <div class="painel"> 
+  <!--Painel - display das cartas quadrado-->
+  <div class="container"></div>
+  <!--rankTable - display para tabela do ranking-->
+  <table class="rankTable">
+    <thead>
+      <!--Cabeçalho do ranking, organizar no css-->
+        <tr>
+            <th>Posição</th>
+            <th>Jogador</th>
+            <th>Tempo </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Segue exemplo aula 20 de cadastros em datagrid, deixar em branco p adicionar as linhas -->
+    </tbody>
+  </table>
+  </div>
+  <!--Colocar os botões aqui - reset / mudar player e o de finalizar o game automaticamente-->
+  <div class="buttons">
+    <audio src="../audio/barontheme.mp3" autoplay></audio>
+    <button class="music" id="musicbutton">&#9834</button>
+    <button class="reiniciar" onclick="reiniciar()">RESET GAME</button>
+    <button class="changePlayer" onclick="changePlayer()">MUDAR JOGADOR</button>
+    <button class="endGame">ENG GAME</button>
+    <button class="zeroRanking" onclick="limparRanking()">ZERAR RANK</button>
+  </div>
+  <div class="painelparabens" style="display: none;">
+  </div>
+</main>
+  <script src="../js/script.js"></script>
+</body>
+</html>

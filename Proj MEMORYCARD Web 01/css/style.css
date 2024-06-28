@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    padding: 25px;
+    margin: 0 0 25px;
+    background-color: rgb(255, 210, 217, 0.8);
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(7, 6, 6, 0.829);
+}
+.painel{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px){
+    .painel{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+table{
+    max-width: 300px;
+    width:100%;
+    border-collapse: collapse;
+    margin: auto; 
+    justify-content: flex-end;   
+}
+table, th, td{
+    border: 1px solid #f79ecf;
+}
+th,td{
+    padding: 10px;
+    text-align: center;
+    text-decoration-color: black bold;
+}
+th{
+    background-color: #ff9eae;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    grid-gap:7px;
+    place-items: center;
+}
+
+.cards{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 7px;
+    position: relative;
+    transition: all 1s ease;
+    transform-style: preserve-3D;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px black solid;
+    border-radius: 7px;
+    transition: all 2s ease;
+}
+
+/* .cardFront{
+    transform: rotateY(180deg);
+} */
+
+.cardBack{
+    background-image: url(../img/cards/cardBack.png);
+    backface-visibility: hidden;
+}
+
+.revelarCarta{
+    transform: rotateY(180deg);
+}
+
+.desabilitarCard{
+    filter:saturate(50%);
+    opacity: 0.8;
+}
+
+.reiniciar, .endGame, .changePlayer, .zeroRanking{
+    background-color: rgba(255, 210, 217, 0.8);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 50px;
+    margin: 15px;
+}
+.painelparabens{
+    position: fixed;
+    z-index: 1;
+    width: 500px;
+    height: 310px;
+    background-image: url('../img/endgame.gif');
+    background-size: cover;
+    border: solid black 3px;
+    border-radius: 15px;
+}
+
+.music{
+    background-color: rgba(255, 210, 217, 0.8);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 15px;
+    margin: 15px;
+}
