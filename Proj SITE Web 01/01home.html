@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="01home.css">
+  <title>HOME</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+    <img src="01img/siteLogo.png" class="mainLogo">
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="01home.html">HOME</a></li>
+          <li><a href="02jogos.html">JOGOS</a></li>
+          <li><a href="03devs.html">DEV'S</a></li>
+          <li><a href="04tga.html">TGA</a></li>
+          <li><a href="07destaques.html">DESTAQUES</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <article >
+    <!--CARROSSEL DE JOGOS-- Função SlideShow-->
+    <section class="carrossel">
+      <div class="carouselContainer">
+        <div class="imgCarousel fade">
+          <a href="02jogos.html#transistor"><img class="jogosImg" src="01img/gamesFotosHorizontais/Transistor.jpg" style="width:100%"></a>
+        </div>
+        <div class="imgCarousel fade">
+          <a href="02jogos.html#deathsdoor"><img class="jogosImg" src="01img/gamesFotosHorizontais/DeathsDoor.avif" style="width:100%"></a>
+        </div>
+        <div class="imgCarousel fade">
+          <a href="02jogos.html#gris"><img class="jogosImg" src="01img/gamesFotosHorizontais/Gris.avif" style="width:100%"></a>
+        </div>
+        <div class="imgCarousel fade">
+          <a href="02jogos.html#littlenightmares"><img class="jogosImg" src="01img/gamesFotosHorizontais/LittleNightmares.jpg" style="width:100%"></a>
+        </div>
+        <div class="imgCarousel fade">
+          <a href="02jogos.html#hollowknight"><img class="jogosImg" src="01img/gamesFotosHorizontais/HollowKnight.avif" style="width:100%"></a>
+        </div>
+        <div class="imgCarousel fade">
+          <a href="02jogos.html#luna"><img class="jogosImg" src="01img/gamesFotosHorizontais/The Shadow of Dust.avif" style="width:100%"></a>
+        </div>
+        <div class="imgCarousel fade">
+          <a href="02jogos.html#cultofthelamb"><img class="jogosImg" src="01img/gamesFotosHorizontais/CultOfTheLamb.avif" style="width:100%"></a>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+      </div>
+    </section>
+  </article>
+  <article class="destaques">
+    <h2 class="titulo">DESTAQUES</h2>
+    <section class="newsContainer">
+      <img src="01img/destaques/hadesII.jpg" class="newsImg" alt="Imagem-Jogo-Silksong">
+      <div class="newsText">    
+          <h3>Hades II tem lançamento surpresa no PC</h3>
+          <h4>06 - Maio - 2024</h4>
+          <br>
+          <p>Hades II teve um lançamento surpresa no PC via Steam e Epic Games Store, mas ainda não há notícias sobre sua versão 
+            para consoles. O título está disponível via acesso antecipado, ou seja, o game pode ser baixado pelo público antes de 
+            estar finalizado, sendo possível comprar o jogo pelo preço de R$ 88,99 para curtir e receber atualizações conforme o título é desenvolvido.
+          </p>
+          <br>
+          <a href="news1.html">Leia o conteúdo >>></a>
+      </div>
+    </section>
+    <br>
+    <section class="newsContainer">
+      <img src="01img/destaques/silksong.jpg" class="newsImg" alt="Imagem-Jogo-Silksong">
+      <div class="newsText">    
+        <h3>Silksong e as previsões de lançamento!</h3>
+        <h4>06 - Maio - 2024</h4>
+        <br>
+        <p>Os ansiosos pelo lançamento de Hollow Knight: Silksong podem comemorar! 
+          O game finalmente ganhou uma data de lançamento na Microsoft Store: 29 de dezembro de 9998. 
+          Basta esperar 8 mil anos (7974, pra ser mais preciso) para colocar as mãos no jogo da Team Cherry.
+          A data, claro, é apenas um "placeholder", termo usado para elementos genéricos que estão reservando o 
+          espaço para o produto final. 
+        </p>
+        <br>
+        <a href="">Leia o conteúdo >>></a>
+      </div>
+    </section>
+    <br>
+    <section class="newsContainer">
+      <img src="01img/destaques/chicory.jpg" class="newsImg" alt="Imagem-Jogo-Silksong">
+      <div class="newsText">    
+        <h3>Chicory: A Colorful Tale - Um mistério incolor</h3>
+        <h4>07 - Abril - 2024</h4>
+        <br>
+        <p>Chicory: A Colorful Tale é um daqueles indie games que transbordam de carinho e afeto em cada um dos elementos que 
+          compõem sua jornada. Criado por Greg Lobanov – um desenvolvedor do Canadá -, e publicado pela Finji, esse simpático jogo 
+          de aventura – que lembra muito os clássicos títulos com visão top-down da série The Legend of Zelda com pitadas de metroidvania
+           -, vai te dar o prazeroso desafio de recolorir um mundo que, por algum motivo, perdeu toda a sua cor.
+        </p>
+        <br>
+        <a href="">Leia o conteúdo >>></a>
+      </div>
+    </section>
+  </article>
+  <br>
+    <!--CARDS DE EMPRESAS-->
+  <h2 class="titulo">DESENVOLVEDORAS</h2> 
+  <div class="containerDevs">
+    <a href="03devs.html#playdead" id="#playdead"><img src="01img/cardsDevs/devPlaydead.png" alt="devPlaydead"></a>
+    <a href="03devs.html#madmimic"><img src="01img/cardsDevs/devMadMimic.png" alt="devMadMimic"></a>
+    <a href="03devs.html#supergiant"><img src="01img/cardsDevs/devSupergiant.png" alt="devSupergiant"></a>
+    <a href="03devs.html#thatgamecompany"><img src="01img/cardsDevs/devThatGameComp.png" alt="devThatGameComp"></a>
+    <a href="03devs.html#tarsier"><img src="01img/cardsDevs/devTarsier.png" alt="devTarsier"></a>
+  </div>
+  <!--TGA BLOCO-->
+ <article>
+    <h2 class="titulo">THE GAME AWARDS</h2>
+    <div class="tgaContainer">
+      <img src="01img/gamesFotosHorizontais/tga.webp" class="tgaImg" alt="">
+      <section class="tgaNews">
+        <h2>DATA E HORA CONFIRMADAS!</h2>
+        <p>
+        <!--escrever em pt!!!!!! não esquecer -->
+        O aniversário de 10 anos do The Game Awards será apresentado ao vivo na quinta-feira, 12 de Dezembro de 2024, diretamente do Teatro Peacock em Los Angeles. <br>
+        Fique ligado para mais detalhes sobre os bilhetes e os planos para o TGA 2024!
+        </p>
+      </section>
+    </div>
+  </article>
+  <footer>
+    <nav class="navrodape">
+      <ul class="rodape">
+        <li><a href="05about.html">SOBRE</a></li>
+        <li><a href="06inscricao.html">INSCREVA-SE</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script rel="javascript" src="01home.js"></script>
+</body>
+</html>
+  

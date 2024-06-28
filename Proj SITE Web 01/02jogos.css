@@ -1,0 +1,275 @@
+/*Designs que afetam a página toda*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: #000000;
+}
+
+  
+.titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+  background-image: linear-gradient(to right, #000000, #ff9eae, #000000);
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 27px;
+  color: white;
+  margin: 10px 5px;
+}
+
+@media only screen and (min-width: 800px){
+  .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    background-image: linear-gradient(to right, #000000, #ff9eae, #000000);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+  }
+}
+  
+/* MENU*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+  background-color: #ff9eae;
+  color: #000000;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mainLogo {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.menu li:hover {
+  background-color: #333;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 17px;
+  list-style-type: none; /* Remove as bolinhas criadas automaticamente pela tag de lista */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: bold white;
+}
+
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  color: #ffffff;
+}
+
+/* RESPONSIVO*/
+@media (max-width: 768px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color:#ff9eae;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 11px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color:#e0218a;
+    transition: 0.3s ease;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+.hamburger {
+  display: block;
+}
+}
+/*MENU_FIM*/
+/*MENU_FLUTUANTE*/
+.menuFlutuante {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background:#ff9eae;
+  padding: 5px;
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  margin: 10px;  
+}
+.menuFlutuante a {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 3px;
+  color: white;
+  text-decoration: none;
+}
+
+.menuFlutuante li{
+  list-style-type: none;
+}
+/*MENU_FLUTUANTE_FIM*/
+/*JOGOS_INFORMAÇÕES*/
+.gamesContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: auto;
+  margin: auto;
+  background-color: #000000;   
+  font-size: small;  
+  color: white;
+  justify-content: center;
+}
+ 
+.gamesImg {
+  max-width: 250px;
+  max-height: 250px;
+  margin: 20px;
+  border-radius: 10px;
+}
+ 
+.gamesText{
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: justify;
+}
+
+a{
+ color: #ff9eae;
+}
+/*RESPONSIVO*/
+@media only screen and (min-width: 800px){
+  .gamesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    max-width: auto;
+    margin-top: 10px;
+    background-color: #000000;     
+  }
+    .gamesImg {
+      max-width: 350px;
+      max-height: 350px;
+  }
+    .gamesText{
+      padding-left: 10px;
+      flex-direction: column;
+      font-size: 16px;
+      color: white;
+      max-width: 750px;
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    background-image: linear-gradient(to right, #000000, #271b1d, #492e33, #6d4348, #94595d, #94595d, 
+    #94595d, #94595d, #6d4348, #492e33, #271b1d, #000000);
+    height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    color: white;
+  }
+}
+  /*JOGOS_INFORMAÇÕES_FIM*/
+  /*RODAPÉ AQUI*/
+.navrodape {
+  display: flex;
+  background-color: #ff9eae;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: bold #ffffff;
+  justify-content: flex-end;
+  margin: auto;  
+  padding: 10px;
+}
+
+.rodape {
+  display: flex;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.rodape li:hover {
+  background-color: #333;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.rodape li {
+  padding: 5px 21px;
+  list-style-type: none; /* Remove as bolinhas criadas automaticamente pela tag de lista */
+}
+
+.rodape li button{
+  max-width: 80px;
+  max-height: 40px;
+  display: inline-block;
+}
+
+.rodape a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 800px){
+  .navrodape {
+    padding: 21px;
+    background-color: #ff9eae;
+    color: #fff;
+  }
+  
+  .rodape {
+    display: flex;
+    font-size: 18px;
+  }
+  
+  .rodape li:hover {
+    background-color: #333;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .rodape li {
+    padding: 5px 17px;
+    list-style-type: none; /* Remove as bolinhas criadas automaticamente pela tag de lista */
+  }
+  
+  .rodape a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="06inscricao.css">
+  <title>INSCRIÇÃO</title>
+</head>
+<body class="containerBody">
+  <header>
+    <nav class="navbar">
+      <img src="01img/siteLogo.png" class="mainLogo">
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="01home.html">HOME</a></li>
+          <li><a href="02jogos.html">JOGOS</a></li>
+          <li><a href="03devs.html">DEV'S</a></li>
+          <li><a href="04tga.html">TGA</a></li>
+          <li><a href="07destaques.html">DESTAQUES</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <article class="containerIscricao">
+    <h1 class="titulo">Inscreva-se!</h1>
+      <form action="inscritos" class="inscrever">
+        <div class="intro">
+          <p>
+            Insira seus dados para receber notificações e ter acesso a outras funcionalidades dos membros do site.
+          </p>
+        </div>  
+          <fieldset>
+           <label for="nome">Entre seu nome: <input id="nome" name="nome" type="text" class="form" required></label>
+           <label for="nomeuser">Entre seu nome de usuário: <input id="nomeuser" name="nomeuser" type="text" class="form" required /></label>
+           <label for="email">Entre seu  Email: <input id="email" name="email" type="email" class="form" required /></label>
+           <label for="new-password">Crie uma senha: <input id="senha" name="senha" type="password" class="form" pattern="[a-z,0-9]{8,}" required /></label>
+           <p class="senha">A senha deve conter: <br>
+            Ao menos 1 letra; <br>
+            Ao menos 1 número; <br>
+            Pelo menos 8 carácteres;
+           </p>
+          </fieldset>
+      <input type="submit" value="Enviar" />
+    </form>
+  </article>
+  <footer>
+    <nav class="navrodape">
+      <ul class="rodape">
+        <li><a href="05about.html">SOBRE</a></li>
+        <li><a href="06inscricao.html">INSCREVA-SE</a></li>
+      </ul>
+    </nav>
+  </footer>
+ </body>
+</html>
+  

@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  
+  body{
+    background-color: #000000;
+  }
+  
+  /*Designs que afetam a página toda*/
+  .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    background-image: linear-gradient(to right, #000000, #ff9eae, #000000);
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 27px;
+    color: white;
+    margin: 10px 5px;
+  }
+  
+  @media only screen and (min-width: 800px){
+    .titulo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: auto;
+      background-image: linear-gradient(to right, #000000, #ff9eae, #000000);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 45px;
+    }
+  }
+  
+  /* MENU*/
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px;
+      background-color: #ff9eae;
+      color: #000000;
+    }
+    
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+
+    }
+    
+    .mainLogo {
+      height: 60px;
+    }
+    
+    .menu {
+      display: flex;
+      font-size: 18px;
+      z-index: 1;
+    }
+    
+    .menu li:hover {
+      background-color: #333;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+    
+    .menu li {
+      padding: 5px 17px;
+      list-style-type: none; /* Remove as bolinhas criadas automaticamente pela tag de lista */
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: bold white;
+    }
+    
+    /* CHECKBOX HACK */
+    input[type=checkbox] {
+      display: none;
+    } 
+    
+    /* HAMBURGER MENU */
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      user-select: none;
+      color: #ffffff;
+    }
+    
+    /* RESPONSIVO*/
+    @media (max-width: 768px) {
+     .menu {
+        display:none;
+        position: absolute;
+        background-color:#ff9eae;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 11px 0;
+      }
+      .menu li:hover {
+        display: inline-block;
+        background-color:#e0218a;
+        transition: 0.3s ease;
+      }
+    
+      .menu {
+        margin-top: 10px;
+      }
+    
+      input[type=checkbox]:checked ~ .menu {
+        display: block;
+      }
+    
+    .hamburger {
+      display: block;
+    }
+  }
+  /*MENU_FIM*/
+  /*DESTAQUES*/
+  
+  .destaques{
+    color:#000000;
+  }
+  .newsContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fce3ee;   
+    font-size: small;  
+    border-radius: 5px;
+    margin: 10px auto;
+   }
+   
+   .newsImg {
+     max-width: 275px;
+     align-items: center;
+   }
+   
+   .newsText{
+     padding-left: 5px;
+     flex-direction: column;
+     font-size: 14px;
+     text-align: justify;
+   }
+  
+   .newsText a{
+    color: #e0218a;
+   }
+  
+   h4{
+    color: #333;
+    font-size: 12px;
+   }
+  /*RESPONSIVO*/
+  @media only screen and (min-width: 800px){
+    .newsContainer{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 10px;
+      max-width: 900px;
+      background-color: #fce3ee; 
+      margin-top: 10px;
+      }
+      .newsImg {
+        max-width: 350px;
+      }
+      .newsText{
+        padding-left: 10px;
+        flex-direction: column;
+        font-size: 16px;
+        text-align: justify;
+      }
+      .destaques{
+        margin-bottom: 15px;
+      }
+  }
+  /*DESTAQUES_FIM*/
+  /*RODAPÉ AQUI*/
+.navrodape {
+  display: flex;
+  background-color: #ff9eae;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: bold #ffffff;
+  justify-content: flex-end;
+  margin: auto;  
+  padding: 10px;
+}
+
+.rodape {
+  display: flex;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.rodape li:hover {
+  background-color: #333;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.rodape li {
+  padding: 5px 21px;
+  list-style-type: none; /* Remove as bolinhas criadas automaticamente pela tag de lista */
+}
+
+.rodape li button{
+  max-width: 80px;
+  max-height: 40px;
+  display: inline-block;
+}
+
+.rodape a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 800px){
+  .navrodape {
+    padding: 21px;
+    background-color: #ff9eae;
+    color: #fff;
+  }
+  
+  .rodape {
+    display: flex;
+    font-size: 18px;
+  }
+  
+  .rodape li:hover {
+    background-color: #333;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .rodape li {
+    padding: 5px 17px;
+    list-style-type: none; /* Remove as bolinhas criadas automaticamente pela tag de lista */
+  }
+  
+  .rodape a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
