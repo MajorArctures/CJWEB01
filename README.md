@@ -55,8 +55,8 @@ Um jogo da memória interativo com temática dos estúdios Ghibli, desenvolvido 
 
 ## 📚 Organização do Repositório
 
-- `/site/` – Contém os arquivos do projeto do site (HTML/CSS/Imagens).
-- `/jogo-da-memoria/` – Contém os arquivos do jogo da memória (HTML/CSS/JS/Imagens/Sons).
+- `/Proj SITE Web 01/` – Contém os arquivos do projeto do site (HTML/CSS/Imagens).
+- `/Proj MEMORYCARD Web 01/` – Contém os arquivos do jogo da memória (HTML/CSS/JS/Imagens/Sons).
 - `/aulas/` – Materiais, exercícios e anotações feitos durante a disciplina.
 
 ---
