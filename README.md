@@ -18,7 +18,7 @@ Este repositório contém os principais projetos desenvolvidos na disciplina de 
 **Descrição:**  
 Um site temático sobre jogos independentes, com foco na estruturação e estilização com **HTML** e **CSS**. Este projeto explorou recursos como Flexbox, responsividade, formulários e navegação entre páginas.
 
-**Principais funcionalidades e seções:**
+**Principais seções:**
 
 - **Carrossel de imagens** com destaque para jogos indie;
 - **Sessão de destaques** com notícias e avaliações;
